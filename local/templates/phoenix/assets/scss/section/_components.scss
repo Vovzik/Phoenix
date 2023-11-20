@@ -1,0 +1,7 @@
+.section-single {
+  padding: rem(210px) 0px rem(70px);
+
+  @media (max-width: 480px) {
+    padding: rem(130px) 0px rem(50px);
+  }
+}

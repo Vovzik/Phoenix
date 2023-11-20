@@ -1,0 +1,56 @@
+.advantage-img {
+  &__content {
+    padding: rem(90px) 0px rem(113px);
+    background: #F4F1EE;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: rem(20px);
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__icon {
+    margin-bottom: rem(25px);
+    width: rem(102px);
+  }
+
+  &__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    line-height: 130%;
+    color: #584A3D;
+    text-transform: uppercase;
+    font-size: rem(18px);
+  }
+
+  @media (max-width: 991px) {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 567px) {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: rem(50px) 0px;
+    }
+    &__text {
+      font-size: rem(13px);
+    }
+
+    &__icon {
+      width: rem(70px);
+    }
+  }
+}
+

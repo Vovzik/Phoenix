@@ -1,0 +1,40 @@
+.advantage {
+  &__content {
+    background: #F4F1EE;
+    padding: rem(105px) 0px rem(106px);
+  }
+
+  &__redactor {
+    max-width: rem(1298px);
+    p {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 500;
+      line-height: 130%;
+      color: rgba(88, 74, 61, 1);
+      font-size: rem(32px);
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: rem(30px);
+      }
+      br {
+        display: none;
+      }
+      strong {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      padding: rem(50px) 0px;
+    }
+
+    &__redactor {
+      p {
+        font-size: rem(18px);
+      }
+    }
+  }
+}
+

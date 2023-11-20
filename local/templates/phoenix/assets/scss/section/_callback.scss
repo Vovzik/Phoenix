@@ -1,0 +1,126 @@
+.callback {
+  &__content {
+    padding: rem(91px) 0px rem(108px);
+    background: #F4F1EE;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    width: rem(485px);
+    height: rem(648px);
+    margin-right: rem(30px);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__info {
+    width: rem(721px);
+  }
+
+  &__title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    line-height: 130%;
+    color: #584A3D;
+    font-size: rem(40px);
+    margin-bottom: rem(55px);
+  }
+
+  &__label {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 130%;
+    color: #3B3731;
+    font-size: rem(24px);
+    margin-bottom: rem(31px);
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    line-height: 130%;
+    color: #3B3731;
+    font-size: rem(14px);
+    height: rem(41px);
+    &:not(:last-child) {
+      margin-bottom: rem(40px);
+    }
+    &::placeholder {
+      color: #3B3731;
+    }
+    border-bottom: rem(2px) solid #584A3D;
+  }
+
+  &__link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 130%;
+    color: #3B3731;
+    font-size: rem(24px);
+    padding-right: rem(107px);
+    position: relative;
+    transition: 0.4s ease-out;
+    &:hover {
+      color: $hover;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: rem(9px);
+      right: 0px;
+      width: rem(94px);
+      height: rem(16px);
+      background: url('../img/callback/arrow.svg') no-repeat;
+      transition: 0.4s ease-out;
+    }
+    &:hover:before {
+      transform: translateX(6px);
+      background: url('../img/callback/arrow-hover.svg') no-repeat;
+      transition: 0.4s ease-out;
+    }
+  }
+
+
+  @media (max-width: 991px) {
+    &__box {
+      display: none;
+      width: 100%;
+    }
+
+    &__info {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: rem(26px);
+      text-align: center;
+      margin-bottom: rem(30px);
+    }
+    &__content {
+      padding: rem(50px) 0px;
+    }
+    &__label,
+    &__link {
+      font-size: rem(18px);
+    }
+
+    &__link:before {
+      top: rem(5px);
+    }
+  }
+
+}
+

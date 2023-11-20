@@ -1,0 +1,119 @@
+.footer {
+  &__content {
+    padding: rem(60px) 0px;
+    background: #584A3D;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__column {
+    width: rem(241px);
+    margin-right: rem(30px);
+  }
+
+  &__link {
+
+  }
+
+  &__img {
+  }
+
+  &__phone,
+  &__address,
+  &__mail {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    line-height: 130%;
+    color: #EADFD4;
+    font-size: rem(16px);
+    margin-bottom: rem(10px);
+  }
+
+
+  &__mail {
+    margin-bottom: 0px;
+  }
+
+  &__menu {
+    margin-right: rem(30px);
+  }
+
+  &__title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 130%;
+    color: #EADFD4;
+    font-size: rem(16px);
+    margin-bottom: rem(12px);
+  }
+
+  &__list {
+    li {
+      &:not(:last-child) {
+        margin-bottom: rem(17px);
+      }
+      a {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        line-height: 130%;
+        color: #EADFD4;
+        font-size: rem(16px);
+        transition: 0.4s ease-out;
+        &:hover {
+          color: $hover;
+        }
+      }
+    }
+  }
+
+  &__contacts {
+
+  }
+
+  &__social {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    line-height: 130%;
+    color: #EADFD4;
+    font-size: rem(16px);
+    display: flex;
+    align-items: center;
+    transition: 0.4s ease-out;
+    &:hover {
+      color: $hover;
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(28px);
+    }
+  }
+
+  &__social-img {
+    flex: 0 0 auto;
+    margin-right: rem(14px);
+    width: rem(22px);
+    height: rem(22px);
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      padding: rem(50px) 0px;
+    }
+    &__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__column,
+    &__menu {
+      width: 100%;
+      margin: 0px;
+      margin-bottom: rem(30px);
+    }
+  }
+}
+
